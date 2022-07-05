@@ -6,6 +6,8 @@ WORKDIR $APP_HOME
 
 COPY . ./
 
+COPY app/package.json .
+
 # COPY requirements.txt requirements.txt
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y nodejs npm 
