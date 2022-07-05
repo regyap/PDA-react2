@@ -6,7 +6,7 @@ WORKDIR $APP_HOME
 
 COPY . ./
 
-COPY /package.json .
+# COPY /package.json .
 
 # COPY requirements.txt requirements.txt
 
