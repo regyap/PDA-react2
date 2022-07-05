@@ -32,7 +32,7 @@ function Upload() {
     console.log(data)
     try{
       setMessage("Loading... ");
-  let res = await fetch("http://127.0.0.1:5000/",{
+  let res = await fetch("http://main-svc:5010/",{
     method: "POST",
     body: JSON.stringify(data),
   });
