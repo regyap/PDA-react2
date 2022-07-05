@@ -1,0 +1,73 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\regin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add redux-form
+
+PATH: 
+  C:\1.Regine\PDA-APP\frontend\venv\Scripts;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Java\jdk-17.0.1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Kubernetes\Minikube;;C:\minikube;C:\Users\regin\AppData\Local\Microsoft\WindowsApps;C:\Users\regin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\regin\.dotnet\tools;C:\Program Files (x86)\Brackets\;C:\Users\regin\AppData\Roaming\npm;C:\ProgramData\regin\GitHubDesktop\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ECONNREFUSED 127.0.0.1:5000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)
+
+npm manifest: 
+  {
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@reduxjs/toolkit": "^1.8.2",
+      "@testing-library/jest-dom": "^5.16.4",
+      "@testing-library/react": "^13.3.0",
+      "@testing-library/user-event": "^13.5.0",
+      "axios": "^0.27.2",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-redux": "^8.0.2",
+      "react-router-dom": "^6.3.0",
+      "react-scripts": "5.0.1",
+      "redux": "^4.2.0",
+      "redux-devtools-extension": "^2.13.9",
+      "redux-saga": "^1.1.3",
+      "web-vitals": "^2.1.4",
+      "proxy": "http://localhost:5000"
+      
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build && npm run layout && npm run assets:remove && npm run assets:copy", 
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
