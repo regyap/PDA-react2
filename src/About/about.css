@@ -1,0 +1,55 @@
+body{
+width:1440px;    
+overflow-x: hidden; 
+}
+#bodyone{
+    padding-top:2%;
+}
+#policebg{
+    /* padding-top:100px; */
+
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../images/policebg.jpg);
+    min-width:140px;
+    /* max-width: 1340px;
+    width:1440px; */
+    min-height:511px;
+    background-attachment: fixed;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#policebg p{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    
+}
+#policebg #text{
+    padding:4%;
+}
+#policebg #header{
+    
+    font-size:33px;
+    padding-top:13%;
+}
+#policebg #para{
+   
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:12px;
+    position: relative;
+    bottom: 32px;
+   
+}
+#bodytwo h1{
+    padding:10%;
+}
+#bodytwo{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#bodyworkflow h1{
+  display:flex;
+  justify-content: center;;
+}
