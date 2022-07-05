@@ -8,6 +8,8 @@ COPY . ./
 
 # COPY requirements.txt requirements.txt
 
-RUN npm install 
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y nodejs \
+    npm   
 
 CMD npm start
