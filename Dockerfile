@@ -23,25 +23,25 @@ RUN chmod 777 /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY ./package.json ./
 # COPY ./package-lock.json ./
-RUN apt-get -y install \
-    curl \
-    default-jdk \
-    git \
-    libcurl4-openssl-dev \
-    libpq-dev \
-    libmcrypt-dev \
-    libpq5 \
-    npm \
-    node \
-    zlib1g-dev \
-    libfreetype6-dev \
-    libjpeg62-turbo-dev \
-    libpng12-dev
+# RUN apt-get -y install \
+#     curl \
+#     default-jdk \
+#     git \
+#     libcurl4-openssl-dev \
+#     libpq-dev \
+#     libmcrypt-dev \
+#     libpq5 \
+#     npm \
+#     node \
+#     zlib1g-dev \
+#     libfreetype6-dev \
+#     libjpeg62-turbo-dev \
+#     libpng12-dev
 RUN rm -rf node_modules
-RUN npm install -g npm@latest
+# RUN npm install -g npm@latest
 RUN apt install -y npm
-RUN npm install --no-progress --ignore-optional --legacy-peer-deps
-RUN npm install --save --force final-form react-final-form
+# RUN npm install --no-progress --ignore-optional --legacy-peer-deps
+# RUN npm install --save --force final-form react-final-form
 RUN sudo chmod +x node_modules/.bin/react-scripts
 RUN sudo npm run build
 COPY . .
