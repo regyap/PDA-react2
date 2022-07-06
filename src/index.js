@@ -8,7 +8,7 @@ import { BrowserRouter, Route,Routes } from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 
 import Index from './App';
 import Upload from './AnalysisPage/components/Upload/UploadBox';
