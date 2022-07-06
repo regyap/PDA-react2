@@ -43,7 +43,7 @@ COPY ./package.json ./
 RUN npm install --no-progress --ignore-optional --legacy-peer-deps
 RUN npm install --save --force final-form react-final-form
 # RUN sudo chmod +x node_modules/.bin/react-scripts
-RUN  npm run build
+# RUN  npm run build
 COPY . .
 EXPOSE 8000
 CMD npm start
