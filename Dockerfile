@@ -22,7 +22,7 @@ USER "$USER"
 RUN chmod 777 /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY ./package.json ./
-# COPY ./package-lock.json ./
+COPY ./package-lock.json ./
 # RUN apt-get -y install \
 #     curl \
 #     default-jdk \
@@ -40,9 +40,11 @@ COPY ./package.json ./
 # RUN rm -rf node_modules
 # RUN npm install -g npm@latest
 # RUN apt install -y npm
-RUN npm install --no-progress --ignore-optional --legacy-peer-deps
-RUN npm install --save --force final-form react-final-form
-# RUN sudo chmod +x node_modules/.bin/react-scripts
+# RUN npm install --no-progress --ignore-optional --legacy-peer-deps
+# RUN npm install --save --force final-form react-final-form
+RUN npm install --silent
+RUN npm install react-scripts@3.4.1 -g --slient
+RUN chmod +x node_modules/.bin/react-scripts
 # RUN  npm run build
 COPY . .
 EXPOSE 8000
