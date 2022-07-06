@@ -37,7 +37,7 @@ COPY ./package.json ./
 #     libfreetype6-dev \
 #     libjpeg62-turbo-dev \
 #     libpng12-dev
-RUN rm -rf node_modules
+# RUN rm -rf node_modules
 # RUN npm install -g npm@latest
 RUN apt install -y npm
 # RUN npm install --no-progress --ignore-optional --legacy-peer-deps
