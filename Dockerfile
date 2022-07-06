@@ -39,7 +39,7 @@ COPY ./package.json ./
 #     libpng12-dev
 # RUN rm -rf node_modules
 # RUN npm install -g npm@latest
-RUN apt install -y npm
+# RUN apt install -y npm
 # RUN npm install --no-progress --ignore-optional --legacy-peer-deps
 # RUN npm install --save --force final-form react-final-form
 RUN sudo chmod +x node_modules/.bin/react-scripts
