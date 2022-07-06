@@ -19,7 +19,7 @@ FROM node:latest
 WORKDIR /app
 RUN chown -R "$USER" /app
 USER "$USER"
-RUN chmod 755 /app
+RUN chmod 777 /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY ./package.json ./
 # COPY ./package-lock.json ./
@@ -29,6 +29,7 @@ RUN apt install -y npm
 RUN npm install --no-progress --ignore-optional --legacy-peer-deps
 RUN npm install --save --force final-form react-final-form
 RUN sudo chmod +x node_modules/.bin/react-scripts
+RUN sudo npm run build
 COPY . .
-# EXPOSE 3000
-CMD npm start
+EXPOSE 8000
+CMD sudo npm start
