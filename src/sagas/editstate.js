@@ -310,9 +310,13 @@ function* updateRelation({ payload }) {
   ]);
 }
 
-export default [
+const array {
+  
+  return(
   takeEvery(types.UPLOADING_DATA, uploadData),
   takeEvery(types.SCRAPING_DATA, scrapeData),
   takeEvery(types.UPDATING_NER_DATA, updateNer),
-  takeEvery(types.UPDATING_RELATION_DATA, updateRelation),
-];
+  takeEvery(types.UPDATING_RELATION_DATA, updateRelation)
+  );
+};
+export default array;
