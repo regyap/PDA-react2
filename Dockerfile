@@ -46,6 +46,6 @@ RUN npm install --silent
 RUN npm install react-scripts@3.4.1 -g --slient
 RUN chmod +x node_modules/.bin/react-scripts
 # RUN  npm run build
-COPY . .
+COPY . ./
 EXPOSE 8000
 CMD npm start
