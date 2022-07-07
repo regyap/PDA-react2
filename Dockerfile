@@ -15,7 +15,7 @@
 # CMD npm start
 
 
-FROM node:13.12.0-alphine
+FROM node:latest
 WORKDIR /app
 RUN chown -R "$USER" /app
 USER "$USER"
