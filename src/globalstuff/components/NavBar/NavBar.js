@@ -9,7 +9,7 @@ const NavBar = () => {
 
 <div id="uppernav">
         
-        <div id="imagediv"><a href="/home"><img id="logoo" src={logo} ></img></a></div>
+        <div id="imagediv"><a href="/home"><img id="logoo" src={logo} alt="logo"></img></a></div>
 </div>
             <div id="bottomnav">
              <div className="navflex">
