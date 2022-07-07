@@ -21,8 +21,8 @@ RUN chown -R "$USER" /app
 USER "$USER"
 RUN chmod 777 /app
 ENV PATH /app/node_modules/.bin:$PATH
-COPY ./package.json ./
-COPY ./package-lock.json ./
+# COPY ./package.json ./
+# COPY ./package-lock.json ./
 # RUN apt-get -y install \
 #     curl \
 #     default-jdk \
