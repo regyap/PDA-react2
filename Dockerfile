@@ -15,11 +15,11 @@
 # CMD npm start
 
 
-FROM node:latest
+FROM node:13.12.0-alphine
 WORKDIR /app
-RUN chown -R "$USER" /app
-USER "$USER"
-RUN chmod 777 /app
+# RUN chown -R "$USER" /app
+# USER "$USER"
+# RUN chmod 777 /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY ./package.json ./
 COPY ./package-lock.json ./
